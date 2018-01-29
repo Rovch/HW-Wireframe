@@ -1,40 +1,63 @@
+
+<!-- FOR INSTRUCTOR GRADING: I know some of the comments are a bit "foward" but i feel as if 
+it is ood practise-->
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- link to style sheet is defined-->
 <head>
   <link rel="stylesheet" href="style.css">
-  <title>Positioning</title>
+  <title>Document</title>
 </head>
-<div id="container"></div>
-  <body>
-    <header>
-      <p>
+<body class="black">
+  <div id="wrapper">
+
+    <!-- Both the nav and header are defined and given the same class "top" -->
+    <div class="top">
+      <header>
         Header
-      </p>
-    </header>
-    <nav>
-      <p>Nav</p>
-    </nav>
-    <section>
-      <p id="right">
-        Aside
-      </p>
-      <!-- <div id="left"> -->
-        <p id="left">
-          Article
-          <h1>h1</h1>
-          <h2>h2</h2>
-          <h3>h3</h3>
-        </p>
-      <!-- </div>     -->
-    </section>
-    <div id="footer">
-      <div id="child">
-        <footer>
-        <p>
-          footer
-        </p>
-      </div>
-  </footer>
+      </header>
+    </div>
+    <div class="top">
+      <nav>
+        Nav
+      </nav>
+    </div>
+
+    <!-- The section is defined and divided up into certain divs that hold
+    the article, header and paragrph tags-->
+    <div id="section" class="grey">
+      <section>
+        Section
+        <div class="black" id="article">
+          <h1 id="articleText"> article</h1>
+          <div id="headerTag" class="grey">
+            <p>
+              <h1>h1</h1>, 
+              <h2>h2</h2>,
+              <h3>h3</h3>,
+            </p>
+          </div>
+          <div id= "p" class="grey">
+            <p>
+              p
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- "right section" is defined and given its appropiate id -->
+    <div id="aside" class="grey">
+       aside
+    </div>
+
+    <!-- footer is defined and given appropiate class and id -->
+    <div id="footer" class="grey">
+      <footer>
+        footer
+      </footer>
+    </div>
+  </div>  
 </body>
-</div>
 </html>
